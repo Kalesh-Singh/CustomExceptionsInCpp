@@ -9,7 +9,7 @@ public:
     explicit MalformedInstructionException(const char* msg)
     : msg(msg) {}
     const char* what() {
-        return (this->msg != nullptr) ? msg : nullptr;
+        return msg;
     }
 private:
     const char* msg = nullptr;
