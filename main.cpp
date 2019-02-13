@@ -4,7 +4,7 @@
 
 class MalformedInstructionException : public std::exception {
 public:
-    explicit MalformedInstructionException() = default;;
+    explicit MalformedInstructionException() = default;
 
     explicit MalformedInstructionException(const char* msg)
     : msg(msg) {}
